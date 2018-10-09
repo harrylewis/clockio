@@ -1,0 +1,85 @@
+// ROOT
+// ----
+//
+// This file is the root of all the css/scss styling.
+//
+
+
+// GOOGLE FONTS
+// ------------
+
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+
+// VARIABLES
+// ---------
+
+@import "variables";
+
+
+// APPLICATION WIDE
+// ----------------
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: $font--montserrat;
+    font-weight: 400;
+  }
+
+
+    .outer-flex-container {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+      .container {
+        margin: 0 auto;
+        max-width: 50em;
+        padding: 6em 2em;
+      }
+
+
+// HERO
+// ----
+
+@import "hero";
+
+
+// BUTTON
+// ------
+
+@import "button";
+
+
+// FORM
+// ----
+
+@import "form";
+
+
+// EVENT
+// -----
+
+@import "event";

@@ -1,0 +1,74 @@
+// FORM
+// ----
+//
+// This file contains all the styling for the forms.
+//
+@import "variables";
+
+.form {
+}
+   
+
+  .form__field {
+    margin-top: 3em;
+  }
+
+    
+    .form__field__header {
+      margin-bottom: 1em;
+      padding: 0 3em;
+    }
+
+
+      .form__field__header__label {
+        margin: 0;
+        font-size: 1.4em;
+        color: $color--grey;
+      }
+
+
+    .form__field__flex {
+      display: flex;
+      align-items: center;
+    }
+
+    
+    .form__field__input {
+      display: block;
+      width: 100%;
+      padding: 0.75em 1.6667em;
+      font: 1.8em $font--montserrat;
+      outline: none;
+      border-radius: 2em;
+      color: $color--black;
+      border: 2px solid $color--brand;
+    }
+
+
+    .form__field__checkbox {
+      margin: 0;
+      margin-right: 2em;
+      appearance: none;
+      -webkit-appearance: none;
+      height: 5em;
+      width: 5em;
+      outline: none;
+      border-radius: 2.5em;
+      background: $color--white;
+      border: 2px solid $color--brand;
+      cursor: pointer;
+    }
+
+
+    .form__field__checkbox__label {
+      font-size: 1.8em;
+      font-family: $font--montserrat;
+      font-weight: 400;
+      color: $color--grey;
+      cursor: pointer;
+    }
+
+
+    .form__field__checkbox:checked {
+      background: $color--brand;
+    }

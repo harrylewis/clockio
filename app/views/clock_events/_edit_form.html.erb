@@ -1,0 +1,21 @@
+<%= form_with model: @clock_event, local: true, class: 'form' do |form| %>
+  <div class="form__field">
+    <div class="form__field__header">
+      <%= form.label :name, 'Your Name', class: 'form__field__header__label' %>
+    </div>  
+    <%= form.text_field :name, class: 'form__field__input' %>
+  </div>
+  <div class="form__field">
+    <div class="form__field__header">
+      <%= form.label :time_logged, class: 'form__field__header__label' %>
+    </div>  
+    <%= form.datetime_field :time_logged, class: 'form__field__input' %>
+  </div>
+  <div class="form__field">
+    <div class="form__field__flex">
+      <%= form.check_box :clocking_in, class: 'form__field__checkbox' %>
+      <%= form.label :clocking_in, 'Check Box to Clock In', class: 'form__field__checkbox__label' %>
+    </div>
+  </div>
+  <%= form.submit 'Edit Clock Event #' + @clock_event.id.to_s, class: 'button' %>
+<% end %>

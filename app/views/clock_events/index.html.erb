@@ -1,0 +1,19 @@
+<div class="container">
+
+  <%
+    @hero = {
+      title: 'Clockio',
+      description: 'Check out the current clock in/out events, or create a new one.',
+      include_logo: true,
+    }
+  %>
+  <%= render 'hero' %>
+
+  <%= link_to 'New Clock Event', new_clock_event_path, class: 'button' %>
+
+  <% @clock_events.each do |clock_event| %>
+    <% @clock_event = clock_event %>
+    <%= render 'event' %>
+  <% end %>
+
+</div>

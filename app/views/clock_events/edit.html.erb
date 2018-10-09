@@ -1,0 +1,16 @@
+<div class="outer-flex-container">
+  <div class="container">
+
+    <%
+      @hero = {
+        title: 'Edit Clock Event',
+        description: sanitize('Use the form below to edit clock event #' + @clock_event.id.to_s + '. <a href="/" class="hero__link">Click here</a> to go home.'),
+        include_logo: false,
+      }
+    %>
+    <%= render 'hero' %>
+
+    <%= render 'edit_form' %>
+  
+  </div>
+</div>

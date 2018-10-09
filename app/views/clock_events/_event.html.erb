@@ -1,0 +1,22 @@
+<div class="event">
+  <span class="event__avatar">
+    <img class="event__avatar__image" src="<%= 'https://s3.amazonaws.com/himama2/images/Team+Avatars/' + @avatars[@clock_event.name] + '_300.png' %>" />
+  </span>
+  <div class="event__content">
+    <div class="event__content__header">
+      <p class="event__content__time-logged">
+        <%= @clock_event.time_logged.localtime.strftime('%B %e, %Y - %l:%M %p') %>
+      </p>
+      <span class="event__content__actions">
+        <%= link_to 'Edit', edit_clock_event_path(@clock_event), class: 'event__content__actions__action' %>
+        <%= link_to 'Delete', clock_event_path(@clock_event), method: :delete, class: 'event__content__actions__action' %>
+      <span>
+    </div>
+    <div class="event__content__data">
+      <p class="event__content__data__name"><%= @clock_event.name %></p>
+      <span class="event__content__data__type <%= @clock_event.clocking_in ? 'event__content__data__type--in' : 'event__content__data__type--out' %>">
+        <%= @clock_event.clocking_in ? 'Clocking In' : 'Clocking Out' %>
+      </span>
+    </div>
+  </div>
+</div>

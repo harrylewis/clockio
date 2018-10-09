@@ -1,0 +1,53 @@
+// HERO
+// ----
+//
+// This file contains all styles for the hero container on every page.
+//
+
+
+.hero {
+  margin-bottom: 6em;
+}
+
+
+  .hero__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 15em;
+    width: 15em;
+    border-radius: 8px;
+    background: $color--brand;
+  }
+
+
+    .hero__logo__emblem {
+      height: 10em;
+      width: 10em;
+      border-radius: 5em;
+      background: $color--white;
+    }
+
+
+  .hero__title {
+    margin: 0;
+    margin-top: 1em;
+    font: 3.6em $font--bree;
+    text-align: center;
+  }
+
+
+  .hero__description {
+    margin: 0;
+    margin-top: 1em;
+    font-size: 1.8em;
+    text-align: center;
+    color: $color--grey;
+  }
+
+
+  .hero__link {
+    color: $color--brand;
+    text-decoration: none;
+  }

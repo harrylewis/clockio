@@ -1,0 +1,30 @@
+// BUTTON
+// ------
+//
+// This file contains all the styling for the buttons.
+//
+
+
+.button {
+  display: block;
+  width: 100%;
+  margin-top: 1.6667em;
+  padding: 0.75em 0;
+  font: 1.8em $font--montserrat;
+  color: $color--white;
+  background: $color--brand;
+  text-align: center;
+  border-radius: 3em;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-weight: 400;
+  transition: background 0.1s;
+  -webkit-transition: background 0.1s;
+  cursor: pointer;
+}
+
+
+.button:hover {
+  background: $color--brand--dark;
+}

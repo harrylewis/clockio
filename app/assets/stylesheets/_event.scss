@@ -1,0 +1,113 @@
+// EVENT
+// -----
+//
+// This file contains all the styles for the clock events.
+//
+
+
+.event {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 4em;
+}
+
+
+  .event__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6em;
+    width: 6em;
+    margin-right: 2em;
+    overflow: hidden;
+    border-radius: 3em;
+    border: 2px solid $color--brand;
+  }
+
+
+    .event__avatar__image {
+      height: 6em;
+      width: 6em;
+    }
+
+
+  .event__content {
+    flex: 1;
+  }
+
+
+    .event__content__header {
+      display: flex;
+      margin-bottom: 1em;
+      padding: 0 3em;
+    }
+
+
+      .event__content__time-logged {
+        margin: 0;
+        font-size: 1.4em;
+        color: $color--grey;
+      }
+
+
+      .event__content__actions {
+        margin-left: auto;
+      }
+      
+      
+        .event__content__actions__action {
+          margin: 0;
+          margin-left: 1em;
+          font-size: 1.4em;
+          color: $color--brand;
+          text-decoration: none;
+        }
+
+
+    .event__content__data {
+      display: flex;
+      padding: 1em;
+      border-radius: 4em;
+      background: $color--white;
+      border: 2px solid $color--brand;
+    }
+
+
+      .event__content__data__name {
+        margin: 0.4em 0;
+        margin-left: 1.1em;
+        font: 1.8em $font--montserrat;
+        color: $color--black;
+      }
+
+
+      .event__content__data__type {
+        display: inline-block;
+        margin-left: auto;
+        padding: 0.5em 1.2em;
+        font-size: 1.6em;
+        border-radius: 2em;
+        text-transform: uppercase;
+      }
+
+
+      .event__content__data__type--in {
+        background: $color--brand;
+        color: $color--white;
+      }
+
+
+      .event__content__data__type--out {
+        color: $color--brand;
+      }
+
+
+@media (max-width: 500px) {
+  
+  .event__avatar {
+    display: none;
+  }
+
+}
+
