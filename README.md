@@ -58,7 +58,7 @@ bin/rails test test/models/clock_event_test.rb
 ## Live Version
 
 A live version of this application can be found at
-[https://clockio.herokuapp.com](https://clockio.herokuapp.com)
+[http://clockio.herokuapp.com](http://clockio.herokuapp.com)
 
 ## Application Information
 
