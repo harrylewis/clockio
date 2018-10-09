@@ -5,7 +5,7 @@
   <div class="event__content">
     <div class="event__content__header">
       <p class="event__content__time-logged">
-        <%= @clock_event.time_logged.localtime.strftime('%B %e, %Y - %l:%M %p') %>
+        <%= @clock_event.time_logged.strftime('%B %e, %Y - %l:%M %p') %>
       </p>
       <span class="event__content__actions">
         <%= link_to 'Edit', edit_clock_event_path(@clock_event), class: 'event__content__actions__action' %>
