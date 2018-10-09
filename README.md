@@ -27,7 +27,7 @@ bundle install
 ```
 
 After the dependencies have been installed, a PostgreSQL database named 
-`myapp_development` should be created, and an instance of PostgreSQL should be
+`myapp_test` should be created, and an instance of PostgreSQL should be
 deployed on your local machine. Then, turn the Ruby `models` into PostgreSQL
 `tables` by running the following:
 
