@@ -10,7 +10,9 @@ class ClockEventsController < ApplicationController
   def index
     @clock_events = ClockEvent.order('time_logged DESC').all
     @avatars = {}
-
+    
+    # assigning random avatar differentiator string from $names to each unique
+    # user (uniqueness determined currently by name)
     @clock_events.each do |clock_event|
       if not @avatars.key?(clock_event.name)
         @avatars[clock_event.name] = $names[(0..($names.length - 1)).to_a.sample]
@@ -45,7 +47,7 @@ class ClockEventsController < ApplicationController
     if @clock_event.update(clock_event_params)
       redirect_to clock_events_path
     else
-      render 'edit'
+      redirect_to edit_clock_event_path
     end
   end
 

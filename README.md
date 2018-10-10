@@ -52,7 +52,7 @@ section, you may run tests against the codebase to ensure that everything is
 working properly. Run the tests by running the following:
 
 ```bash
-bin/rails test test/models/clock_event_test.rb
+bin/rails test test/*
 ```
 
 ## Live Version
